@@ -1,0 +1,23 @@
+{
+  "name": "poggly-back",
+  "version": "1.0.0",
+  "description": "Project Poggly.",
+  "main": "app.ts",
+  "repository": "https://github.com/sspzoa/poggly-back",
+  "author": "sspzoa",
+  "license": "AGPL-3.0",
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "dev": "nodemon --watch \"src/**/*.ts\" --exec \"ts-node\" src/app.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.1.0",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
