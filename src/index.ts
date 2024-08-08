@@ -12,7 +12,6 @@ app.set('port', 8080);
 
 app.get('/', (req : Request, res : Response) => {
     const filePath = path.join(__dirname, "index.html")
-    console.log(filePath)
     res.sendFile(filePath)
 
 })
