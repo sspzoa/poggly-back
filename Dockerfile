@@ -1,7 +1,7 @@
 FROM node:alpine
 
 WORKDIR /usr/app
-COPY .github /usr/app
+COPY ./ /usr/app
 
 ARG DATABASE_URL
 ARG SECRET_KEY
