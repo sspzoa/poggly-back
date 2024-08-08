@@ -13,13 +13,13 @@ app.get('/welcome', (req: Request, res: Response, next: NextFunction) => {
   });
 });
 
-app.get('/hello', (req: Request, res: Response) => {
+app.get('/env', (req: Request, res: Response, next: NextFunction) => {
   res.json({
     data: {
-      message: "Hello World"
-    }
-  })
-})
+      message: process.env.SECRET_KEY,
+    },
+  });
+});
 
 app.listen('8080', () => {
   console.log(`
