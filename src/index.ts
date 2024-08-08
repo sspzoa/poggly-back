@@ -3,9 +3,10 @@ import path from 'path'
 import LoginRouter from './loginRouter'
 import apiRouter from './apiRouter'
 import swaggerUi from '../swagger/swagger'
+import cors from 'cors'
 const app:Express = express()
 
-
+app.use(cors())
 app.use(express.json())
 
 app.set('port', 8080);
